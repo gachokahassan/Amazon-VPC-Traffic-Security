@@ -3,11 +3,18 @@
 [![AWS](https://img.shields.io/badge/AWS-100000?style=flat&logo=amazon&logoColor=white&labelColor=232F3E&color=FF9900)](https://aws.amazon.com/) 
 [![AWS VPC](https://img.shields.io/badge/AWS_VPC-100000?style=flat&logo=amazonaws&logoColor=white&labelColor=0052CC&color=232F3E)](https://aws.amazon.com/vpc/) 
 [![AWS Security](https://img.shields.io/badge/AWS_Security-100000?style=flat&logo=amazonaws&logoColor=white&labelColor=232F3E&color=569A31)](https://aws.amazon.com/security/)
+[![AWS EC2](https://img.shields.io/badge/AWS_EC2-100000?style=flat&logo=amazonec2&logoColor=white&labelColor=FF9900&color=232F3E)](https://aws.amazon.com/ec2/)
+[![AWS IGW](https://img.shields.io/badge/AWS_IGW-100000?style=flat&logo=amazonaws&logoColor=white&labelColor=232F3E&color=0052CC)](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html)
+[![AWS NACL](https://img.shields.io/badge/AWS_NACL-100000?style=flat&logo=amazonaws&logoColor=white&labelColor=569A31&color=232F3E)](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html)
+[![AWS Security Groups](https://img.shields.io/badge/AWS_Security_Groups-100000?style=flat&logo=amazonaws&logoColor=white&labelColor=FF4F8B&color=232F3E)](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html)
+
 
 ---
 
 ## Overview
 This project demonstrates the use of **Amazon Virtual Private Cloud (VPC)** to manage traffic flow and enhance security within an AWS environment. The primary focus is on configuring and integrating key networking components such as **Route Tables**, **Network Access Control Lists (NACLs)**, and **Security Groups** to achieve a secure and efficient network infrastructure.
+
+![VPC Architecture Diagram](Images/architecture.png)
 
 ---
 
@@ -56,6 +63,8 @@ Security Groups act as virtual firewalls for Amazon EC2 instances to control inb
   - **Outbound**: Allow all traffic by default, with optional restrictions.
 - **Configuration**: Defined custom rules to secure traffic to specific instances.
 
+![Web Server Configuration](Images/web-server.png)  
+
 ### 3. **Network Access Control Lists (NACLs)**
 NACLs provide stateless, subnet-level traffic control.
 - **Default Behavior**:
@@ -63,6 +72,8 @@ NACLs provide stateless, subnet-level traffic control.
 - **Custom Rules**:
   - Block traffic from specific IP ranges.
   - Permit only approved traffic flows.
+
+![Network ACL](Images/network-acl.png)
 
 ---
 
